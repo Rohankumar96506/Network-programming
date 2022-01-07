@@ -50,7 +50,6 @@ int main()
     }
 
     pthread_create(&pid,NULL,&reciver_handler,(void*)&client_socket);
-    sleep(1);
     int uid = rand();
     while(1)
     {
@@ -59,7 +58,6 @@ int main()
     scanf("%s",buffer);
     printf("\n");
     send(client_socket,&buffer,strlen(buffer),0);
-     sleep(1);
     }
 
 
