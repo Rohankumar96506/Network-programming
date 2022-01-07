@@ -144,7 +144,7 @@ int main()
         pclient->uid = user_id++;
         add_in_arr(pclient);
         pthread_create(&pid,NULL,&client_handler,pclient);
-        sleep(10);
+      
     }
 
 
