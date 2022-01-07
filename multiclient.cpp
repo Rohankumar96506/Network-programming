@@ -44,7 +44,6 @@ int main()
     client_socket = socket(PF_INET,SOCK_STREAM,0);
     char buffer[BUFFER_SIZE];
     char name[NAME_BUFFER_SIZE];
-    int leave_flag = 0;
     printf("Enter your name: ");
     scanf("%s",name);
     printf("\n");
