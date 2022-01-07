@@ -7,7 +7,6 @@
 #include<arpa/inet.h>
 #include<unistd.h>
 #include<pthread.h>
-#include<string.h>
 #define CLIENT_SIZE 50
 #define BUFFER_SIZE 100
 
