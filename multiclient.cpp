@@ -8,6 +8,7 @@
 #include<unistd.h>
 #include<pthread.h>
 #define BUFFER_SIZE 150
+#define NAME_BUFFER_SIZE 25
 
 
 
@@ -41,8 +42,8 @@ int main()
     pthread_t pid;
     int client_socket;
     client_socket = socket(PF_INET,SOCK_STREAM,0);
-    char buffer[256];
-    char name[25];
+    char buffer[BUFFER_SIZE];
+    char name[NAME_BUFFER_SIZE];
     int leave_flag = 0;
     printf("Enter your name: ");
     scanf("%s",name);
