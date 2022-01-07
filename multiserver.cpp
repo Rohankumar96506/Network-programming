@@ -66,7 +66,7 @@ void* client_handler(void* args)
   if(flag>0)
   {   
       sprintf(message,"%s %s\n",client->name,buffer);
-      printf("%s(%d) has send a message\n",client->name.client->uid);
+      printf("%s(%d) has send a message\n",client->name,client->uid);
       for(int i = 0;i<CLIENT_SIZE;i++)
       {
           if(client_info[i]!=NULL && client_info[i]->uid!=client->uid)
