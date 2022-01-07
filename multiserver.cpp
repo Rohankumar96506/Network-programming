@@ -179,7 +179,7 @@ int main()
         pthread_create(&pid,NULL,&client_handler,pclient);
         }
         else
-        {   printf("MAX CLIENT LIMIT REACH(%d)\n",no_of_client)
+        {   printf("MAX CLIENT LIMIT REACH(%d)\n",no_of_client);
             close(client_sock);    
         }
 
