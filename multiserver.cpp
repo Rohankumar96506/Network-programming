@@ -13,6 +13,12 @@
 #define NAME_BUFFER 180
 #define HOST_ADDR 9001
 
+/*CLIENT_SIZE is number of client can be connect at one time
+  BUFFER_SIZE is size of message receive at one time from client
+  NAME_BUFFER_SIZE is size of name os client
+  NAME_BUFFER is to store both client name and his or her message
+  HOST_ADDR is port address in which server will listen */
+
 
 
 struct client_data *client_info[CLIENT_SIZE];
